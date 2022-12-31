@@ -16,3 +16,31 @@
     }
 }
 **/
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    display : flex;
+    justify-content: center;
+
+}
+
+.header__logo {
+/**
+    filter: invert (100%);**/
+    width: auto;
+    height: 20px;
+}
+
+.restaurant__photo {
+    width: auto;
+    height: 124px;
+}
+
+/**
+.essailogo {
+   font-family: "shrikhand", sans-serif;
+   color: blue; 
+}**/
