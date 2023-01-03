@@ -47,31 +47,28 @@ header {
 
 }
 
-.header__logo {
-/**
-    filter: invert (100%);**/
-    width: auto;
-    height: 20px;
+.header__logo p {
+    font-family: "shrikhand", sans-serif;
+    font-size: 2rem; 
+    margin: 0;
+    padding: 10px 0 10px 0;
 }
+
 
 .introduction {
     background: #F2F2F2;
     height: 300px;
 
-    &__barre_recherche {
+    &__localisation {
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(#BABABA, 1%, #EBEBEB);
-
+    height: 46px;
     }
 
-    &__saisie {
-        border: none;
-        background: linear-gradient(#BABABA, 1%, #EBEBEB);
-        margin-left: 10px;
-        width: 100px;
-        height: 46px;
+    p {
+        padding-left: 15px;
     }
 
     &__btn {
@@ -82,7 +79,7 @@ header {
 
         &_contenu {
             color : white;
-            font-size: 700;
+            font-weight: 700;
             background: linear-gradient(#FF79DA, 65%, #9356DC);
             /**background-color: #FF79DA;**/
             border: 0px;
