@@ -130,15 +130,35 @@ header {
 }
 
 .restaurant__photo {
-  width: auto;
-  height: 124px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  border-radius: 15px 15px 0 0;
+}
+.restaurant__recapitulatif {
+  width: 300px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.restaurant__recapitulatif_contenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+.restaurant__recapitulatif h3, .restaurant__recapitulatif p {
+  margin: 0;
+  padding: 0;
 }
 .restaurant__recapitulatif a {
   text-decoration: none;
   color: #000000;
   height: 50%;
 }
-
 /**
 .essailogo {
    font-family: "shrikhand", sans-serif;
