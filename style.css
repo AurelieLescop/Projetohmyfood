@@ -52,14 +52,14 @@ header {
 }
 
 .introduction {
-  background: #F2F2F2;
+  background: #f7f7f7;
   height: 300px;
 }
 .introduction__localisation {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#BABABA, 1%, #EBEBEB);
+  background: linear-gradient(#CECECE, 5%, #EAEAEA);
   height: 46px;
 }
 .introduction p {
@@ -89,11 +89,16 @@ header {
 .fonctionnement__deroule {
   display: flex;
   align-items: center;
+  background: #F7F7F7;
+  width: 275px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
 }
 .fonctionnement__deroule:hover {
-  border: black 1px solid;
-  margin: 5px;
+  /**margin: 5px;**/
   background: #f5edff;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
 }
 .fonctionnement__deroule:hover .fonctionnement__icone {
   color: #9356DC;
