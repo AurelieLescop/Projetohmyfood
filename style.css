@@ -90,25 +90,12 @@ header {
   display: flex;
   align-items: center;
 }
-.fonctionnement__deroule--vol:hover {
+.fonctionnement__deroule:hover {
   border: black 1px solid;
   margin: 5px;
-  background: rgba(147, 86, 220, 0.2);
+  background: #f5edff;
 }
-.fonctionnement__deroule--vol:hover .fonctionnement__icone {
-  color: #9356DC;
-}
-.fonctionnement__deroule--survol {
-  display: flex;
-  align-items: center;
-}
-.fonctionnement__deroule--survol:hover {
-  border: black 1px solid;
-  margin: 5px;
-  background: #FF79DA;
-  opacity: 0.2;
-}
-.fonctionnement__deroule--survol:hover .fonctionnement__icone {
+.fonctionnement__deroule:hover .fonctionnement__icone {
   color: #9356DC;
 }
 .fonctionnement__numero {

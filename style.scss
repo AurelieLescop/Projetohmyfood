@@ -97,34 +97,22 @@ header {
 }
 
 .fonctionnement {
-
     &__deroule {
         display: flex;
         align-items: center;
-        &--vol:hover {
+        
+
+        &:hover {
             border: black 1px solid;
             margin: 5px;
-            background: rgba(147,86,220, 0.2);
+            background: #f5edff;
 
             .fonctionnement__icone {
             color: #9356DC
             }
         }
-        &--survol {
-            display: flex;
-            align-items: center;
-            &:hover {
-                border: black 1px solid;
-                margin: 5px;
-                background: #FF79DA;
-                opacity: 0.2;
-
-                .fonctionnement__icone {
-                color: #9356DC;
-                }
             }
-        }
-    }
+    
     &__numero {
         margin-right: 15px;
         color: white;
