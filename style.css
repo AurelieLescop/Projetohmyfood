@@ -24,7 +24,7 @@ body {
 h1 {
   font-size: 1.6rem;
   text-align: center;
-  /**margin: 0 30px 0 30px;**/
+  padding: 0 30px 0 30px;
 }
 
 h2 {
@@ -54,24 +54,30 @@ header {
 .introduction__barre_recherche {
   display: flex;
   justify-content: center;
-  background: #DEDEDE;
+  align-items: center;
+  background: linear-gradient(#BABABA, 1%, #EBEBEB);
 }
 .introduction__saisie {
   border: none;
-  background: #DEDEDE;
+  background: linear-gradient(#BABABA, 1%, #EBEBEB);
   margin-left: 10px;
   width: 100px;
+  height: 46px;
 }
 .introduction__btn {
+  display: flex;
+  justify-content: center;
   align-items: center;
+}
+.introduction__btn_contenu {
   color: white;
+  font-size: 700;
   background: linear-gradient(#FF79DA, 65%, #9356DC);
   /**background-color: #FF79DA;**/
   border: 1px solid #f2f2f2;
   height: 46px;
   width: 200px;
   border-radius: 25px;
-  font-size: 700;
 }
 
 .fonctionnement__deroule {
