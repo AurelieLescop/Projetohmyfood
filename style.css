@@ -142,15 +142,32 @@ header {
   height: 150px;
   border-radius: 15px 15px 0 0;
 }
+.restaurant__photo_mot {
+  position: absolute;
+  background: #99e2d0;
+  color: #008766;
+  left: 260px;
+  /**left: 70%;**/
+  margin-top: 10px;
+  height: 20px;
+  width: 60px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 5px;
+}
+.restaurant__photo_mot p {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.restaurant__icone_coeur {
+  color: red;
+}
 .restaurant__recapitulatif {
   margin: auto;
   width: 300px;
   margin-bottom: 20px;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  /**&__icone_coeur {
-
-  }**/
 }
 .restaurant__recapitulatif_contenu {
   display: flex;

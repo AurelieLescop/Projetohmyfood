@@ -158,6 +158,30 @@ header {
     height: 150px;
     border-radius: 15px 15px 0 0;
     }
+
+    &__photo_mot {
+        position: absolute;
+        background: #99e2d0;
+        color: #008766;
+        left: 260px;
+        /**left: 70%;**/
+        margin-top: 10px;
+        height: 20px;
+        width: 60px;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 5px;
+
+        p {
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+    }
+
+    &__icone_coeur {
+        color: red;
+        }
+
     &__recapitulatif {
         margin: auto;
         width: 300px;
@@ -182,10 +206,6 @@ header {
             color: #000000;
             height: 50%;
         }
-
-        /**&__icone_coeur {
-
-        }**/
     }
 
 
