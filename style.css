@@ -19,6 +19,10 @@ h2 {
   font-size: 1.2rem;
 }
 
+h3 {
+  font-size: 1rem;
+}
+
 p {
   font-size: 0.9rem;
 }
@@ -141,8 +145,13 @@ header {
   font-size: 0.7rem;
   font-weight: bold;
 }
+.restaurant__icone_coeur {
+  /**color: white;**/
+}
 .restaurant__icone_coeur:hover {
-  color: red;
+  background: linear-gradient(#9356DC, 40%, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .restaurant__recapitulatif {
   /**margin: auto;**/
