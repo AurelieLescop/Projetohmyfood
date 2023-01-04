@@ -80,7 +80,9 @@ header {
         &_contenu {
             color : white;
             font-weight: 700;
-            background: linear-gradient(#FF79DA, 65%, #9356DC);
+            /**linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+            background: linear-gradient(20deg, #FF79DA, 65%, #9356DC)**/
+            background: linear-gradient(175deg, #FF79DA, 65%, #9356DC);
             /**background-color: #FF79DA;**/
             border: 0px;
             height: 46px;
@@ -170,9 +172,9 @@ header {
             height: 50%;
         }
 
-        &__icone_coeur {
+        /**&__icone_coeur {
 
-        }
+        }**/
     }
 
 

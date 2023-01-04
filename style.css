@@ -74,7 +74,9 @@ header {
 .introduction__btn_contenu {
   color: white;
   font-weight: 700;
-  background: linear-gradient(#FF79DA, 65%, #9356DC);
+  /**linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  background: linear-gradient(20deg, #FF79DA, 65%, #9356DC)**/
+  background: linear-gradient(175deg, #FF79DA, 65%, #9356DC);
   /**background-color: #FF79DA;**/
   border: 0px;
   height: 46px;
@@ -132,6 +134,9 @@ header {
   margin-bottom: 20px;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /**&__icone_coeur {
+
+  }**/
 }
 .restaurant__recapitulatif_contenu {
   display: flex;
@@ -148,6 +153,7 @@ header {
   color: #000000;
   height: 50%;
 }
+
 /**
 .essailogo {
    font-family: "shrikhand", sans-serif;
