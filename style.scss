@@ -1,21 +1,4 @@
-/**.btn {
-    display: inline-block;
-    margin: 0 auto;
-    background: #15DEA5;
-    padding: 1rem;
-    &--disabled {
-        background: grey;
-    }
 
-    &--outline {
-        background: transparent;
-        border: 2px solid #15DEA5;
-        &.btn--disabled{
-            border: 2px solid grey
-        }
-    }
-}
-**/
 
 body {
     font-family: "Roboto", sans-serif;
@@ -103,7 +86,7 @@ header {
 
 .fonctionnement {
     &__deroule {
-        margin: auto;
+        /**margin: auto;**/
         display: flex;
         align-items: center;
         background: #F7F7F7;
@@ -178,7 +161,7 @@ header {
         }
     }
 
-    &__icone_coeur {
+    &__icone_coeur:hover {
         color: red;
         }
 
