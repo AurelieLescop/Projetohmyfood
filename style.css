@@ -22,7 +22,7 @@ body {
 }
 
 section {
-  margin: 20px;
+  padding: 30px 20px 30px 20px;
 }
 
 h1 {
@@ -32,6 +32,8 @@ h1 {
 }
 
 h2 {
+  /**padding-top: 20px;**/
+  padding-bottom: 10px;
   font-size: 1.2rem;
 }
 
@@ -96,9 +98,10 @@ header {
   align-items: center;
   background: #F7F7F7;
   width: 275px;
+  height: 60px;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .fonctionnement__deroule:hover {
   /**margin: 5px;**/
