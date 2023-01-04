@@ -151,8 +151,8 @@ header {
 
     &__photo {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    /**margin-left: auto;
+    margin-right: auto;**/
     object-fit: cover;
     width: 100%;
     height: 150px;
@@ -163,7 +163,7 @@ header {
         position: absolute;
         background: #99e2d0;
         color: #008766;
-        left: 260px;
+        left: 250px;
         /**left: 70%;**/
         margin-top: 10px;
         height: 20px;
@@ -183,7 +183,7 @@ header {
         }
 
     &__recapitulatif {
-        margin: auto;
+        /**margin: auto;**/
         width: 300px;
         margin-bottom: 20px;
         border-radius: 20px;
@@ -193,7 +193,9 @@ header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-left: 20px;
+            margin-left: 10px;
+            margin-right: 20px;
+            height: 70px;
         }
 
         h3, p {
