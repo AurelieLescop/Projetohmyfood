@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -31,13 +32,25 @@ p {
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
+.header {
+  /**lié à page menu : arrow et a**/
+}
 .header__logo p {
   font-family: "shrikhand", sans-serif;
   font-size: 2rem;
   margin: 0;
   padding: 10px 0 10px 0;
+}
+.header__arrow {
+  position: absolute;
+  left: 20px;
+}
+.header a {
+  text-decoration: none;
+  color: black;
 }
 
 .introduction {
@@ -208,6 +221,69 @@ h4 {
   font-family: "shrikhand", sans-serif;
   color: white;
   margin-top: 0;
+}
+
+/** CSS menu**/
+.bandeau {
+  /**position: absolute;**/
+  width: 100%;
+  height: 200px;
+}
+
+/**
+.page__contenu {
+    position: absolute;
+}
+**/
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "shrikhand", sans-serif;
+  margin-top: 0;
+}
+
+/**.titre_page {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    background: #F7F7F7;
+    padding:0;
+}**/
+.titre_page {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px 15px 0 0;
+  background: #F7F7F7;
+}
+
+.icone_coeur {
+  padding-right: 30px;
+}
+
+.menu {
+  background: #F7F7F7;
+}
+.menu__description_contenu {
+  padding-bottom: 20px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  width: 275px;
+  height: 60px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px 20px 20px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.menu__description a {
+  text-decoration: none;
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */
