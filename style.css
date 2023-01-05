@@ -92,6 +92,11 @@ header {
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
+.fonctionnement {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .fonctionnement__deroule {
   margin: auto;
   display: flex;
@@ -132,6 +137,10 @@ header {
 
 .restaurant {
   background: #f7f7f7;
+}
+.restaurant_organisation {
+  display: flex;
+  flex-wrap: wrap;
 }
 .restaurant__photo {
   display: block;

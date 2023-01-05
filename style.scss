@@ -102,6 +102,10 @@ header {
 }
 
 .fonctionnement {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+
     &__deroule {
         margin: auto;
         display: flex;
@@ -148,6 +152,11 @@ header {
 
 .restaurant {
     background: #f7f7f7;
+
+    &_organisation {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     &__photo {
     display: block;
