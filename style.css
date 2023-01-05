@@ -79,7 +79,7 @@ header {
 }
 
 .fonctionnement__deroule {
-  /**margin: auto;**/
+  margin: auto;
   display: flex;
   align-items: center;
   background: #F7F7F7;
