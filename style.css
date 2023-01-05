@@ -93,7 +93,7 @@ header {
 .fonctionnement__deroule:hover {
   /**margin: 5px;**/
   background: #f5edff;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 .fonctionnement__deroule:hover .fonctionnement__icone {
   color: #9356DC;
@@ -160,6 +160,9 @@ header {
   margin-bottom: 20px;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.restaurant__recapitulatif:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 .restaurant__recapitulatif_contenu {
   display: flex;
