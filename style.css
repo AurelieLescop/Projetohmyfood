@@ -9,6 +9,7 @@ section {
 
 h1 {
   font-size: 1.6rem;
+  /**font-weight: 400;**/
   text-align: center;
   padding: 20px 30px 0 30px;
 }
@@ -178,10 +179,32 @@ header {
   height: 50%;
 }
 
-/**
-.essailogo {
-   font-family: "shrikhand", sans-serif;
-   color: blue; 
-} **/
+footer {
+  padding: 25px 20px 25px 20px;
+  background: #353535;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer li {
+  padding: 0 0 5px 0;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer_icone {
+  padding-right: 10px;
+}
+
+h4 {
+  font-weight: 400;
+  font-family: "shrikhand", sans-serif;
+  color: white;
+  margin-top: 0;
+}
 
 /*# sourceMappingURL=style.css.map */

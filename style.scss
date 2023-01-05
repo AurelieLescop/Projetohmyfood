@@ -11,6 +11,7 @@ section {
 
 h1 {
     font-size: 1.6rem;
+    /**font-weight: 400;**/
     text-align: center;
     padding: 20px 30px 0 30px;
 }
@@ -206,10 +207,34 @@ header {
 
 }
 
+footer {
+    padding: 25px 20px 25px 20px;
+    background: #353535;
 
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
-/**
-.essailogo {
-   font-family: "shrikhand", sans-serif;
-   color: blue; 
-} **/
+    li {
+        padding: 0 0 5px 0;
+    }
+
+    a {
+        text-decoration: none;
+        color:white;
+    }
+}
+
+.footer_icone {
+    padding-right: 10px;
+}
+
+h4 {
+    font-weight: 400;
+    font-family: "shrikhand", sans-serif;
+    color: white;
+    margin-top: 0;
+} 
+
