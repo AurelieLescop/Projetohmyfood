@@ -92,6 +92,12 @@ header {
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
+.essai {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+}
+
 .fonctionnement {
   display: flex;
   flex-wrap: wrap;
@@ -155,7 +161,6 @@ header {
   position: absolute;
   background: #99e2d0;
   color: #008766;
-  left: 250px;
   /**left: 70%;**/
   margin-top: 10px;
   height: 20px;
@@ -177,7 +182,7 @@ header {
   -webkit-text-fill-color: transparent;
 }
 .restaurant__recapitulatif {
-  /**margin: auto;**/
+  margin: auto;
   width: 300px;
   margin-bottom: 20px;
   border-radius: 20px;
@@ -194,7 +199,8 @@ header {
   margin-right: 20px;
   height: 70px;
 }
-.restaurant__recapitulatif h3, .restaurant__recapitulatif p {
+.restaurant__recapitulatif h3,
+.restaurant__recapitulatif p {
   margin: 0;
   padding: 0;
 }
@@ -237,6 +243,7 @@ h4 {
   /**position: absolute;**/
   width: 100%;
   height: 200px;
+  object-fit: cover;
 }
 
 /**
@@ -298,7 +305,8 @@ h5 {
   text-decoration: none;
   color: #000000;
 }
-.menu__description h3, .menu__description p {
+.menu__description h3,
+.menu__description p {
   margin: 0;
   padding: 0;
 }
@@ -321,7 +329,9 @@ h6 {
 }
 
 .menu__prix {
-  align-items: bottom;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

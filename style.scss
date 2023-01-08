@@ -1,8 +1,6 @@
-
-
 body {
     font-family: "Roboto", sans-serif;
-    margin: 0; 
+    margin: 0;
 }
 
 section {
@@ -31,17 +29,17 @@ p {
 }
 
 header {
-    display : flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .header {
     &__logo p {
-    font-family: "shrikhand", sans-serif;
-    font-size: 2rem; 
-    margin: 0;
-    padding: 10px 0 10px 0;
+        font-family: "shrikhand", sans-serif;
+        font-size: 2rem;
+        margin: 0;
+        padding: 10px 0 10px 0;
     }
 
     /**lié à page menu : arrow et a**/
@@ -52,25 +50,25 @@ header {
 
     a {
         text-decoration: none;
-        color:black;
+        color: black;
     }
 }
 
 .introduction {
     background: #f7f7f7;
     /**height: 300px;**/
-    
+
     p {
         text-align: center;
         padding: 0 15px 0 15px;
     }
 
     &__localisation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(#CECECE, 5%, #EAEAEA);
-    height: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(#CECECE, 5%, #EAEAEA);
+        height: 46px;
     }
 
     &__btn {
@@ -81,7 +79,7 @@ header {
         padding-bottom: 50px;
 
         &_contenu {
-            color : white;
+            color: white;
             font-weight: 700;
             /**linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
             background: linear-gradient(20deg, #FF79DA, 65%, #9356DC)**/
@@ -91,20 +89,26 @@ header {
             height: 46px;
             width: 200px;
             border-radius: 25px;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
             &:hover {
-                box-shadow: 0px 5px 5px rgba(0,0,0,0.4);
+                box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
             }
         }
-    
+
     }
 }
 
+.essai {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+}
+
 .fonctionnement {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     &__deroule {
         margin: auto;
@@ -114,21 +118,21 @@ justify-content: space-between;
         width: 275px;
         height: 60px;
         border-radius: 15px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         margin-bottom: 20px;
-        
+
 
         &:hover {
             /**margin: 5px;**/
             background: #f5edff;
-            box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 
             .fonctionnement__icone {
-            color: #9356DC
+                color: #9356DC
             }
         }
-            }
-    
+    }
+
     &__numero {
         position: absolute;
         /**margin-right: 15px;**/
@@ -142,6 +146,7 @@ justify-content: space-between;
         justify-content: center;
         align-items: center;
     }
+
     &__icone {
         color: #7e7e7e;
         margin-left: 25px;
@@ -159,20 +164,21 @@ justify-content: space-between;
     }
 
     &__photo {
-    display: block;
-    /**margin-left: auto;
+        display: block;
+        /**margin-left: auto;
     margin-right: auto;**/
-    object-fit: cover;
-    width: 100%;
-    height: 150px;
-    border-radius: 15px 15px 0 0;
+        object-fit: cover;
+        width: 100%;
+        height: 150px;
+        border-radius: 15px 15px 0 0;
     }
 
     &__photo_mot {
         position: absolute;
         background: #99e2d0;
         color: #008766;
-        left: 250px;
+        
+
         /**left: 70%;**/
         margin-top: 10px;
         height: 20px;
@@ -190,22 +196,22 @@ justify-content: space-between;
     &__icone_coeur {
         /**color: white;**/
 
-    &:hover {
-        background: linear-gradient(#9356DC, 40%, #FF79DA);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        &:hover {
+            background: linear-gradient(#9356DC, 40%, #FF79DA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
-}
 
     &__recapitulatif {
-        /**margin: auto;**/
+        margin: auto;
         width: 300px;
         margin-bottom: 20px;
         border-radius: 20px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
         &:hover {
-            box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
         }
 
         &_contenu {
@@ -217,7 +223,8 @@ justify-content: space-between;
             height: 70px;
         }
 
-        h3, p {
+        h3,
+        p {
             margin: 0;
             padding: 0;
         }
@@ -248,7 +255,7 @@ footer {
 
     a {
         text-decoration: none;
-        color:white;
+        color: white;
     }
 }
 
@@ -261,7 +268,7 @@ h4 {
     font-family: "shrikhand", sans-serif;
     color: white;
     margin-top: 0;
-} 
+}
 
 /** CSS menu**/
 
@@ -269,6 +276,7 @@ h4 {
     /**position: absolute;**/
     width: 100%;
     height: 200px;
+    object-fit: cover;
 }
 
 /**
@@ -282,7 +290,7 @@ h5 {
     font-weight: 400;
     font-family: "shrikhand", sans-serif;
     margin-top: 0;
-} 
+}
 
 /**.titre_page {
     display: flex;
@@ -315,33 +323,34 @@ h5 {
     &__description {
 
         &_contenu {
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background: white;
-        width: 275px;
-        height: 50px;
-        border-radius: 15px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        margin: 20px 20px 20px 10px;
-        padding: 10px 10px 10px 10px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            width: 275px;
+            height: 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 20px 20px 20px 10px;
+            padding: 10px 10px 10px 10px;
 
-        &:hover {
-            box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+            &:hover {
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+            }
         }
-}
-    
+
         a {
             text-decoration: none;
             color: #000000;
         }
 
-        h3, p {
+        h3,
+        p {
             margin: 0;
             padding: 0;
         }
-}
+    }
 }
 
 h6 {
@@ -362,5 +371,7 @@ h6 {
 }
 
 .menu__prix {
-    align-items: bottom;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
 }
