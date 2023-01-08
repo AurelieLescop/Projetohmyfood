@@ -141,6 +141,11 @@ header {
   margin-right: 15px;
 }
 
+.essai_mot {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .restaurant {
   background: #f7f7f7;
 }
@@ -161,6 +166,7 @@ header {
   position: absolute;
   background: #99e2d0;
   color: #008766;
+  margin-right: 10px;
   /**left: 70%;**/
   margin-top: 10px;
   height: 20px;
