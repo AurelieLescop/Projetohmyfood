@@ -322,6 +322,7 @@ h5 {
     background: #F7F7F7;
     padding: 30px 20px 0 20px;
     margin: 0;
+    /**margin-top: 200px;**/
 }
 
 .icone_coeur {
@@ -329,8 +330,8 @@ h5 {
 }
 
 .essai_menu {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin: auto;
 }
 
@@ -352,7 +353,7 @@ h5 {
             align-items: center;
             justify-content: space-between;
             background: white;
-            width: 275px;
+            width: 300px;
             height: 50px;
             border-radius: 15px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -398,4 +399,19 @@ h6 {
     display: flex;
     align-items: flex-end;
     height: 100%;
+    padding-bottom: 8px
 }
+
+/**essai animation apparition menu**/
+@keyframes transition {
+0% {margin-top: 70px;}
+100% {margin-top: 0px;}
+}
+
+@keyframes opacity {
+0% {opacity: 0;}
+100% {opacity: 1.0;}
+}
+
+.essai_menu {
+    animation: transition 1.0s ease-in-out 2.0s forwards, opacity 1.0s ease-in-out 2.0s;}
