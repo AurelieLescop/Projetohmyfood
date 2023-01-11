@@ -328,11 +328,23 @@ h5 {
     padding-right: 30px;
 }
 
+.essai_menu {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
 .menu {
     background: #F7F7F7;
     padding-top: 0;
 
+    &_organisation {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     &__description {
+
 
         &_contenu {
             margin: auto;
