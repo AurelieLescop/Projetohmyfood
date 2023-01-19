@@ -256,13 +256,6 @@ h4 {
   z-index: 0;
 }
 
-.page__contenu {
-  z-index: 10;
-  position: relative;
-  margin-top: 150px;
-  border-radius: 40px;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -286,7 +279,13 @@ h5 {
     background: #F7F7F7;
     padding:0;
 }**/
-.titre_page {
+.page {
+  z-index: 10;
+  position: relative;
+  margin-top: 150px;
+  border-radius: 40px;
+}
+.page__title {
   display: flex;
   justify-content: space-between;
   border-radius: 15px 15px 0 0;
@@ -295,17 +294,23 @@ h5 {
   margin: 0;
   /**margin-top: 200px;**/
 }
-
-.icone_coeur {
+.page__icone {
   padding-right: 30px;
 }
-
-.essai_menu {
+.page__menu {
+  background: #F7F7F7;
+  padding-top: 0;
+}
+.page__menu__organisation {
+  display: flex;
+  flex-wrap: wrap;
+}
+.page__menu__organisation__summary {
   padding-left: 10px;
   padding-right: 10px;
   margin: auto;
 }
-.essai_menu:hover #check {
+.page__menu__organisation__summary:hover #check {
   display: block;
   width: 50px;
   height: 100%;
@@ -317,16 +322,7 @@ h5 {
   /**transition: transform 2s;**/
   transform: rotate(360deg);
 }
-
-.menu {
-  background: #F7F7F7;
-  padding-top: 0;
-}
-.menu_organisation {
-  display: flex;
-  flex-wrap: wrap;
-}
-.menu__description_contenu {
+.page__menu__organisation__summary__description__content {
   margin: auto;
   display: flex;
   align-items: center;
@@ -339,15 +335,22 @@ h5 {
   margin: 20px 20px 20px 10px;
   padding: 10px 10px 10px 10px;
 }
-.menu__description_contenu:hover {
+.page__menu__organisation__summary__description__content:hover {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
-.menu__description a {
+.page__menu__organisation__summary__description__content__price {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  padding-bottom: 8px;
+  transform: rotate(360deg);
+}
+.page__menu a {
   text-decoration: none;
   color: #000000;
 }
-.menu__description h3,
-.menu__description p {
+.page__menu h3,
+.page__menu p {
   margin: 0;
   padding: 0;
 }
@@ -369,14 +372,6 @@ h6 {
   padding-bottom: 50px;
 }
 
-.menu__prix {
-  display: flex;
-  align-items: flex-end;
-  height: 100%;
-  padding-bottom: 8px;
-  transform: rotate(360deg);
-}
-
 /**essai animation apparition menu**/
 @keyframes transition {
   0% {
@@ -394,7 +389,7 @@ h6 {
     opacity: 1;
   }
 }
-.essai_menu {
+.page__menu__organisation__summary {
   animation: transition 1s ease-in-out 0s forwards, opacity 1s ease-in-out 0s;
 }
 
