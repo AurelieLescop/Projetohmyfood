@@ -317,6 +317,8 @@ h5 {
   align-items: center;
   justify-content: center;
   display: flex;
+  /**transition: transform 2s;**/
+  transform: rotate(360deg);
 }
 
 .menu {
@@ -375,6 +377,7 @@ h6 {
   align-items: flex-end;
   height: 100%;
   padding-bottom: 8px;
+  transform: rotate(360deg);
 }
 
 /**essai animation apparition menu**/
@@ -402,6 +405,32 @@ h6 {
   display: none;
 }
 
+/**
+@keyframes rotate360 {
+    0% {
+      transform: rotate(0deg);
+    }
+    20% {
+      transform: rotate(-60deg);
+    }
+    40% {
+      transform: rotate(-120deg);
+    }
+    60% {
+      transform: rotate(-180deg);
+    }
+    80% {
+      transform: rotate(-240deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+#check:hover {
+    animation: rotate360 1.0s ease-in-out 0s;
+}
+**/
 /**
 .essai_menu:hover {
 
