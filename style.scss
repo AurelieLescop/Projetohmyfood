@@ -158,12 +158,12 @@ header {
 
 }
 
-.essai_mot {
+.restaurant__word {
     display: flex;
     justify-content: flex-end;
 }
 
-.essai_restaurant {
+.restaurant__container__vignette {
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
@@ -172,12 +172,12 @@ header {
 .restaurant {
     background: #f7f7f7;
 
-    &_organisation {
+    &__container {
         display: flex;
         flex-wrap: wrap;
     }
 
-    &__photo {
+    &__picture {
         display: block;
         /**margin-left: auto;
     margin-right: auto;**/
@@ -187,7 +187,7 @@ header {
         border-radius: 15px 15px 0 0;
     }
 
-    &__photo_mot {
+    &__word__position {
         position: absolute;
         background: #99e2d0;
         color: #008766;
@@ -208,7 +208,7 @@ header {
         }
     }
 
-    &__icone_coeur {
+    &__icone {
         /**color: white;**/
 
         &:hover {
@@ -218,7 +218,7 @@ header {
         }
     }
 
-    &__recapitulatif {
+    &__container__vignette__summary {
         margin: auto;
         width: 300px;
         margin-bottom: 20px;
@@ -229,7 +229,7 @@ header {
             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
         }
 
-        &_contenu {
+        &__description {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -238,8 +238,7 @@ header {
             height: 70px;
         }
 
-        h3,
-        p {
+        h3, p {
             margin: 0;
             padding: 0;
         }

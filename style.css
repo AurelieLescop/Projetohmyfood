@@ -141,12 +141,12 @@ header {
   margin-right: 15px;
 }
 
-.essai_mot {
+.restaurant__word {
   display: flex;
   justify-content: flex-end;
 }
 
-.essai_restaurant {
+.restaurant__container__vignette {
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
@@ -155,11 +155,11 @@ header {
 .restaurant {
   background: #f7f7f7;
 }
-.restaurant_organisation {
+.restaurant__container {
   display: flex;
   flex-wrap: wrap;
 }
-.restaurant__photo {
+.restaurant__picture {
   display: block;
   /**margin-left: auto;
   margin-right: auto;**/
@@ -168,7 +168,7 @@ header {
   height: 150px;
   border-radius: 15px 15px 0 0;
 }
-.restaurant__photo_mot {
+.restaurant__word__position {
   position: absolute;
   background: #99e2d0;
   color: #008766;
@@ -181,29 +181,29 @@ header {
   vertical-align: middle;
   padding-top: 5px;
 }
-.restaurant__photo_mot p {
+.restaurant__word__position p {
   font-size: 0.7rem;
   font-weight: bold;
 }
-.restaurant__icone_coeur {
+.restaurant__icone {
   /**color: white;**/
 }
-.restaurant__icone_coeur:hover {
+.restaurant__icone:hover {
   background: linear-gradient(#9356DC, 40%, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.restaurant__recapitulatif {
+.restaurant__container__vignette__summary {
   margin: auto;
   width: 300px;
   margin-bottom: 20px;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.restaurant__recapitulatif:hover {
+.restaurant__container__vignette__summary:hover {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
-.restaurant__recapitulatif_contenu {
+.restaurant__container__vignette__summary__description {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -211,12 +211,11 @@ header {
   margin-right: 20px;
   height: 70px;
 }
-.restaurant__recapitulatif h3,
-.restaurant__recapitulatif p {
+.restaurant__container__vignette__summary h3, .restaurant__container__vignette__summary p {
   margin: 0;
   padding: 0;
 }
-.restaurant__recapitulatif a {
+.restaurant__container__vignette__summary a {
   text-decoration: none;
   color: #000000;
   height: 50%;
