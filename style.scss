@@ -100,18 +100,17 @@ header {
     }
 }
 
-.essai {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: auto;
-}
-
-.fonctionnement {
+.manual {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    &__deroule {
+    &__description {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: auto;
+
+    &__explanation {
         margin: auto;
         display: flex;
         align-items: center;
@@ -128,24 +127,27 @@ header {
             background: #f5edff;
             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 
-            .fonctionnement__icone {
+            .manual__icone {
                 color: #9356DC
             }
         }
-    }
 
-    &__numero {
-        position: absolute;
-        /**margin-right: 15px;**/
-        margin-left: -10px;
-        color: white;
-        background-color: #9356DC;
-        width: 20px;
-        height: 20px;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        &__number {
+            position: absolute;
+            /**margin-right: 15px;**/
+            margin-left: -10px;
+            color: white;
+            background-color: #9356DC;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    }
     }
 
     &__icone {
