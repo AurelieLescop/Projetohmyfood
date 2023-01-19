@@ -141,17 +141,6 @@ header {
   margin-right: 15px;
 }
 
-.restaurant__word {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.restaurant__container__vignette {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: auto;
-}
-
 .restaurant {
   background: #f7f7f7;
 }
@@ -159,39 +148,10 @@ header {
   display: flex;
   flex-wrap: wrap;
 }
-.restaurant__picture {
-  display: block;
-  /**margin-left: auto;
-  margin-right: auto;**/
-  object-fit: cover;
-  width: 100%;
-  height: 150px;
-  border-radius: 15px 15px 0 0;
-}
-.restaurant__word__position {
-  position: absolute;
-  background: #99e2d0;
-  color: #008766;
-  margin-right: 10px;
-  /**left: 70%;**/
-  margin-top: 10px;
-  height: 20px;
-  width: 60px;
-  text-align: center;
-  vertical-align: middle;
-  padding-top: 5px;
-}
-.restaurant__word__position p {
-  font-size: 0.7rem;
-  font-weight: bold;
-}
-.restaurant__icone {
-  /**color: white;**/
-}
-.restaurant__icone:hover {
-  background: linear-gradient(#9356DC, 40%, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.restaurant__container__vignette {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
 }
 .restaurant__container__vignette__summary {
   margin: auto;
@@ -219,6 +179,44 @@ header {
   text-decoration: none;
   color: #000000;
   height: 50%;
+}
+.restaurant__word {
+  display: flex;
+  justify-content: flex-end;
+}
+.restaurant__word__position {
+  position: absolute;
+  background: #99e2d0;
+  color: #008766;
+  margin-right: 10px;
+  /**left: 70%;**/
+  margin-top: 10px;
+  height: 20px;
+  width: 60px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 5px;
+}
+.restaurant__word__position p {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.restaurant__picture {
+  display: block;
+  /**margin-left: auto;
+  margin-right: auto;**/
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  border-radius: 15px 15px 0 0;
+}
+.restaurant__icone {
+  /**color: white;**/
+}
+.restaurant__icone:hover {
+  background: linear-gradient(#9356DC, 40%, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 footer {
