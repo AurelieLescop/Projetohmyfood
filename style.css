@@ -335,11 +335,19 @@ h5 {
   justify-content: space-between;
   background: white;
   width: 300px;
-  height: 50px;
+  height: 70px;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 20px 20px 20px 10px;
-  padding: 10px 10px 10px 10px;
+  /**padding: 10px;**/
+  /**
+                          &__title {
+                              padding: 10px;
+                              text-overflow: "ellipsis";
+                              overflow: hidden;
+                              white-space: nowrap;
+                          }
+                          **/
 }
 .page__menu__organisation__summary__description__content:hover {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
@@ -347,8 +355,9 @@ h5 {
 .page__menu__organisation__summary__description__content__price {
   display: flex;
   align-items: flex-end;
+  font-weight: bold;
   height: 100%;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
   transform: rotate(360deg);
 }
 .page__menu a {
@@ -403,21 +412,45 @@ h6 {
   display: none;
 }
 
-.check {
+.check_container {
   display: block;
-  width: 50px;
+  width: 60px;
   height: 100%;
   background-color: #99E2D0;
-  color: white;
   align-items: center;
   justify-content: center;
   display: flex;
+  border-radius: 0 15px 15px 0;
+}
+
+.check_icone {
+  /**
+  display: flex;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  **/
+  color: #99E2D0;
+  background-color: white;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
   /**transform: rotate(180deg);
   transition-property: transform;
   transition-duration: 4s;**/
-  animation: rotation 4s infinite linear;
+  /**animation: rotation 4s infinite linear;**/
+  animation: rotation 1.5s linear;
 }
 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 /**@keyframes wheelHueColor {
     from, to { color: hsl(324, 70%, 45%); }
     10%      { color: hsl(360, 65%, 45%); }
@@ -435,14 +468,6 @@ h6 {
     color: hsl(324, 70%, 45%);
     animation: wheelHueColor 100s infinite;
 }**/
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 /**
 #check:hover {
     animation: rotate360 1.0s ease-in-out 0s;
