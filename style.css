@@ -314,19 +314,35 @@ h5 {
   padding-right: 10px;
   margin: auto;
 }
-.page__menu__organisation__summary:hover {
-  /**             #check {
-               display: block;
-               width: 50px;
-               height: 100%;
-               background-color:#99E2D0;
-               color: white;
-               align-items: center;
-               justify-content: center;
-               display: flex;**/
-  /**transition: transform 2s;**/
-  /**transform: rotate(360deg);
-  }**/
+.page__menu__organisation__summary:hover .check_container {
+  display: block;
+  width: 60px;
+  height: 100%;
+  background-color: #99E2D0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 0 15px 15px 0;
+  animation: checkmove 1s ease-in-out 0s forwards, opacity 1s ease-in-out 0s;
+}
+.page__menu__organisation__summary:hover .check_icone {
+  /**
+  display: flex;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  **/
+  color: #99E2D0;
+  background-color: white;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  /**transform: rotate(180deg);
+  transition-property: transform;
+  transition-duration: 4s;**/
+  /**animation: rotation 4s infinite linear;**/
+  animation: rotation 1.5s linear;
 }
 .page__menu__organisation__summary__description__content {
   margin: auto;
@@ -340,17 +356,15 @@ h5 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 20px 20px 20px 10px;
   /**padding: 10px;**/
-  /**
-                          &__title {
-                              padding: 10px;
-                              text-overflow: "ellipsis";
-                              overflow: hidden;
-                              white-space: nowrap;
-                          }
-                          **/
 }
 .page__menu__organisation__summary__description__content:hover {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+.page__menu__organisation__summary__description__content__title {
+  padding: 10px;
+  /**text-overflow: "ellipsis";
+  overflow: hidden;
+  white-space: nowrap;**/
 }
 .page__menu__organisation__summary__description__content__price {
   display: flex;
@@ -387,20 +401,20 @@ h6 {
   padding-bottom: 50px;
 }
 
-/**essai animation apparition menu**/
+/** animation apparition menu**/
 @keyframes transition {
-  0% {
+  from {
     margin-top: 70px;
   }
-  100% {
+  to {
     margin-top: 0px;
   }
 }
 @keyframes opacity {
-  0% {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }
@@ -408,47 +422,26 @@ h6 {
   animation: transition 1s ease-in-out 0s forwards, opacity 1s ease-in-out 0s;
 }
 
-#check {
+.check_container {
   display: none;
 }
 
-.check_container {
-  display: block;
-  width: 60px;
-  height: 100%;
-  background-color: #99E2D0;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  border-radius: 0 15px 15px 0;
-}
-
-.check_icone {
-  /**
-  display: flex;
-  display: block;
-  align-items: center;
-  justify-content: center;
-  **/
-  color: #99E2D0;
-  background-color: white;
-  margin: auto;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  /**transform: rotate(180deg);
-  transition-property: transform;
-  transition-duration: 4s;**/
-  /**animation: rotation 4s infinite linear;**/
-  animation: rotation 1.5s linear;
-}
-
+/** animation rotation coche menu**/
 @keyframes rotation {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+/** animation apparition coche menu**/
+@keyframes checkmove {
+  from {
+    margin-left: 70px;
+  }
+  to {
+    margin-left: 0px;
   }
 }
 /**@keyframes wheelHueColor {
