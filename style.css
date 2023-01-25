@@ -315,7 +315,7 @@ h5 {
   padding-right: 10px;
   margin: auto;
 }
-.page__menu__organisation__summary:hover .check_container {
+.page__menu__organisation__summary__description:hover .check_container {
   /**display: block;**/
   /**width: 60px;**/
   height: 100%;
@@ -325,7 +325,7 @@ h5 {
   display: flex;
   border-radius: 0 15px 15px 0;
 }
-.page__menu__organisation__summary:hover .check_icone {
+.page__menu__organisation__summary__description:hover .check_icone {
   display: block;
   /**
   display: flex;
