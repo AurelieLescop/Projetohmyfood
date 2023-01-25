@@ -568,6 +568,7 @@ h6 {
     -webkit-text-stroke-color: black;
     /**transform: scaleX(0);
     transition: transform 2s;**/
+    /**animation: background-size 5s ease-in-out 0s forwards;**/
 
     &:hover {
         background: linear-gradient(#9356DC, 40%, #FF79DA);
@@ -577,6 +578,17 @@ h6 {
         /**transform: scaleX(1);**/
     }
 }
+
+/**@keyframes background-size {
+    from {
+        background: 0%;
+    }
+    to {
+        background: 100%;
+    }
+}**/
+
+
 /**
 .coeur_remplissage {
     background: linear-gradient(#9356DC, 40%, #FF79DA);
