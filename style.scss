@@ -239,18 +239,19 @@ header {
     } 
 
     &__icone {
-        /**color: white;**/
-        &:hover {
-            color: linear-gradient(#9356DC, 40%, #FF79DA);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+
+    &:hover {
+        background: linear-gradient(#9356DC, 40%, #FF79DA);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-color: transparent;
+    }
     }
 }
 
-.fa-heart {
-    color: red;
-}
 
 footer {
     padding: 25px 20px 25px 20px;
@@ -548,32 +549,31 @@ h6 {
         animation: slide 2.0s,
     }**/
 
-    /**@keyframes wheelHueColor {
-        from, to { color: hsl(324, 70%, 45%); }
-        10%      { color: hsl(360, 65%, 45%); }
-        20%      { color: hsl( 36, 80%, 45%); }
-        30%      { color: hsl( 72, 75%, 35%); }
-        40%      { color: hsl(108, 65%, 35%); }
-        50%      { color: hsl(144, 75%, 35%); }
-        60%      { color: hsl(180, 75%, 35%); }
-        70%      { color: hsl(216, 60%, 45%); }
-        80%      { color: hsl(252, 65%, 50%); }
-        90%      { color: hsl(288, 60%, 40%); }
+
+
+/** Animation remplissage coeur **/
+/**.icon {
+    color: xxx;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: xxx;
+}**/
+
+.restaurant__icone {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+
+    &:hover {
+        background: linear-gradient(#9356DC, 40%, #FF79DA);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-color: transparent;
     }
-    
-    .page__menu__organisation__summary__description__content__price {
-        color: hsl(324, 70%, 45%);
-        animation: wheelHueColor 100s infinite;
-    }**/
-
-
-
-/**
-#check:hover {
-    animation: rotate360 1.0s ease-in-out 0s;
 }
-**/
-/**
+
+
+
+
 
 
 /**
