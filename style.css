@@ -428,11 +428,11 @@ h6 {
   /**display: none;**/
   width: 0px;
   transition: width 2s;
+  overflow: hidden;
 }
 
 .check_icone {
   display: none;
-  color: blue;
 }
 
 /** animation rotation coche menu**/
@@ -500,6 +500,23 @@ h6 {
   -webkit-text-stroke-color: transparent;
 }
 
+/**
+.coeur_remplissage {
+    background: linear-gradient(#9356DC, 40%, #FF79DA);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-color: transparent;
+    transition: all 0.3s linear 0s;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.restaurant__icone:hover .coeur_remplissage {
+    height: 100%;
+}
+**/
 /**
 .fa-heart {
     color: #FFF;
