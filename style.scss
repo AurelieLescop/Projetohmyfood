@@ -352,7 +352,21 @@ h5 {
                 padding-right: 10px;
                 margin: auto;
             
-                &__description:hover {
+                &__description {
+
+                    .check_container {
+                        /**display: none;**/
+                        width: 0px;
+                        transition: width 2s;
+                        overflow:hidden;
+                    }
+                    
+                    .check_icone {
+                        display: none;
+                        
+                    }
+                
+                &:hover {
 
                     .check_container {
                         /**display: block;**/
@@ -362,7 +376,8 @@ h5 {
                         align-items: center;
                         justify-content: center;
                         display: flex;
-                        border-radius: 0 15px 15px 0; 
+                        border-radius: 0 15px 15px 0;
+                        width: 60px; 
                         }
                     
                     .check_icone {
@@ -385,8 +400,8 @@ h5 {
                         /**animation: rotation 4s infinite linear;**/
                         animation: rotation 0.5s ease-in 250ms;
                         }
-
                 }
+            }
                     &__description__content {
                         margin: auto;
                         display: flex;
@@ -406,9 +421,9 @@ h5 {
 
                         &__title {
                             padding: 10px;
-                            /**text-overflow: "ellipsis";
+                            text-overflow: "ellipsis";
                             overflow: hidden;
-                            white-space: nowrap;**/
+                            white-space: nowrap;
                         }
                         
                         &__price {
@@ -482,17 +497,7 @@ h6 {
 }
 
 
-.check_container {
-    /**display: none;**/
-    width: 0px;
-    transition: width 2s;
-    overflow:hidden;
-}
 
-.check_icone {
-    display: none;
-    
-}
 
 /** animation rotation coche menu**/
     @keyframes rotation {
@@ -530,10 +535,7 @@ h6 {
 
     **/
 
-    .page__menu__organisation__summary:hover .check_container {
-        width: 60px;
 
-    } 
 
    /** .page__menu__organisation__summary:hover .page__menu__organisation__summary__description__content__price {
         animation: slide 2.0s ease-in-out 0s forwards;

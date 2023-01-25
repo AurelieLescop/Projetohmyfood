@@ -315,6 +315,15 @@ h5 {
   padding-right: 10px;
   margin: auto;
 }
+.page__menu__organisation__summary__description .check_container {
+  /**display: none;**/
+  width: 0px;
+  transition: width 2s;
+  overflow: hidden;
+}
+.page__menu__organisation__summary__description .check_icone {
+  display: none;
+}
 .page__menu__organisation__summary__description:hover .check_container {
   /**display: block;**/
   /**width: 60px;**/
@@ -324,6 +333,7 @@ h5 {
   justify-content: center;
   display: flex;
   border-radius: 0 15px 15px 0;
+  width: 60px;
 }
 .page__menu__organisation__summary__description:hover .check_icone {
   display: block;
@@ -363,9 +373,9 @@ h5 {
 }
 .page__menu__organisation__summary__description__content__title {
   padding: 10px;
-  /**text-overflow: "ellipsis";
+  text-overflow: "ellipsis";
   overflow: hidden;
-  white-space: nowrap;**/
+  white-space: nowrap;
 }
 .page__menu__organisation__summary__description__content__price {
   display: flex;
@@ -426,17 +436,6 @@ h6 {
   animation: transition 1s ease-in-out 0s forwards, opacity 1s ease-in-out 0s;
 }
 
-.check_container {
-  /**display: none;**/
-  width: 0px;
-  transition: width 2s;
-  overflow: hidden;
-}
-
-.check_icone {
-  display: none;
-}
-
 /** animation rotation coche menu**/
 @keyframes rotation {
   from {
@@ -469,10 +468,6 @@ h6 {
 } 
 
 **/
-.page__menu__organisation__summary:hover .check_container {
-  width: 60px;
-}
-
 /** .page__menu__organisation__summary:hover .page__menu__organisation__summary__description__content__price {
      animation: slide 2.0s ease-in-out 0s forwards;
  }**/
