@@ -354,7 +354,7 @@ h5 {
                 &:hover {
 
                     .check_container {
-                        display: block;
+                        /**display: block;**/
                         /**width: 60px;**/
                         height: 100%;
                         background-color:#99E2D0;
@@ -365,6 +365,7 @@ h5 {
                         }
                     
                     .check_icone {
+                        display: block;
                         /**
                         display: flex;
                         display: block;
@@ -480,8 +481,14 @@ h6 {
 }
 
 .check_container {
-    display: none;
+    /**display: none;**/
     width: 0px;
+    transition: width 2s;
+}
+
+.check_icone {
+    display: none;
+    color: blue;
 }
 
 /** animation rotation coche menu**/
@@ -505,7 +512,7 @@ h6 {
         }
     }**/
 
-    @keyframes slide {
+    /**@keyframes slide {
         from {
             width: 0px;
         }
@@ -513,14 +520,23 @@ h6 {
             width: 60px;
         }
     }
+    
+    .page__menu__organisation__summary:hover .check_container {
+        animation: slide 2.0s ease-in-out 0s forwards;
+    } 
+
+    **/
+
+    .page__menu__organisation__summary:hover .check_container {
+        width: 60px;
+
+    } 
 
    /** .page__menu__organisation__summary:hover .page__menu__organisation__summary__description__content__price {
         animation: slide 2.0s ease-in-out 0s forwards;
     }**/
 
-    .page__menu__organisation__summary:hover .check_container {
-        animation: slide 2.0s ease-in-out 0s forwards;
-    } 
+    
 
 
 /**
