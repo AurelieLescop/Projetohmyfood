@@ -237,7 +237,7 @@ header {
         height: 150px;
         border-radius: 15px 15px 0 0;
     } 
-
+/**
     &__icone {
     color: white;
     -webkit-text-stroke-width: 1px;
@@ -249,7 +249,7 @@ header {
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-color: transparent;
     }
-    }
+    }**/
 }
 
 
@@ -564,12 +564,15 @@ h6 {
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+    /**transform: scaleX(0);
+    transition: transform 2s;**/
 
     &:hover {
         background: linear-gradient(#9356DC, 40%, #FF79DA);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-color: transparent;
+        /**transform: scaleX(1);**/
     }
 }
 /**
