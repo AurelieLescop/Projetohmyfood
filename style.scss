@@ -361,8 +361,7 @@ h5 {
                         align-items: center;
                         justify-content: center;
                         display: flex;
-                        border-radius: 0 15px 15px 0;
-                        animation: checkmove 1.0s ease-in-out 0s forwards, opacity 1.0s ease-in-out 0s;
+                        border-radius: 0 15px 15px 0; 
                         }
                     
                     .check_icone {
@@ -415,8 +414,11 @@ h5 {
                             align-items: flex-end;
                             font-weight: bold;
                             height: 100%;
-                            padding-bottom: 20px;
-                            transform: rotate(360deg);
+                            padding: 0 10px 20px 0;
+/**
+                            p {
+                            padding: 0 10px 20px 0;
+                            }**/
                         }
                     }
             }
@@ -493,14 +495,26 @@ h6 {
 
 /** animation apparition coche menu**/
 
-    @keyframes checkmove {
+    @keyframes slide {
         from {
-            margin-left: 70px;
+            margin-left: 180px;
         }
         to {
             margin-left: 0px;
         }
     }
+
+    .page__menu__organisation__summary:hover .page__menu__organisation__summary__description__content__price {
+        animation: slide 2.0s ease-in-out 0s forwards;
+    }
+/**
+    .page__menu__organisation__summary:hover .check_container {
+        animation: opacity 1.0s ease-in-out 0s;
+    }**/
+/**
+    .page__menu__organisation__summary:hover .page__menu__organisation__summary__description__content__price {
+        animation: slide 2.0s,
+    }**/
 
     /**@keyframes wheelHueColor {
         from, to { color: hsl(324, 70%, 45%); }
@@ -528,9 +542,7 @@ h6 {
 }
 **/
 /**
-.essai_menu:hover {
 
-}**/
 
 /**
 .fa-heart {
