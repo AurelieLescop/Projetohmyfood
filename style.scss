@@ -358,7 +358,16 @@ h5 {
                         /**display: none;**/
                         width: 0px;
                         transition: width 2s;
+                        background-color:#99E2D0;
                         overflow:hidden;
+                        height: 100%;
+                        align-items: center;
+                        justify-content: center;
+                        display: flex;
+                        border-radius: 0 15px 15px 0;
+                        
+                        transition: width 2s;
+                 
                     }
                     
                     .check_icone {
@@ -371,26 +380,22 @@ h5 {
                     .check_container {
                         /**display: block;**/
                         /**width: 60px;**/
-                        height: 100%;
-                        background-color:#99E2D0;
-                        align-items: center;
-                        justify-content: center;
-                        display: flex;
-                        border-radius: 0 15px 15px 0;
+                      
                         width: 60px; 
+                        transition: width 2s;
                         }
                     
                     .check_icone {
                         display: block;
                         /**
                         display: flex;
-                        display: block;
+                        display: block;**/
                         align-items: center;
                         justify-content: center;
-                        **/
+                        
                         color: #99E2D0;
                         background-color: white;
-                        margin: auto;
+    
                         width: 20px;
                         height: 20px;
                         border-radius: 10px;
@@ -403,8 +408,8 @@ h5 {
                 }
             }
                     &__description__content {
-                        margin: auto;
                         display: flex;
+                        flex-direction: row;
                         align-items: center;
                         justify-content: space-between;
                         background: white;
@@ -420,10 +425,12 @@ h5 {
                         }
 
                         &__title {
-                            padding: 10px;
+                            /**padding: 10px;**/
+                            width: 100%;
                             text-overflow: "ellipsis";
                             overflow: hidden;
                             white-space: nowrap;
+                            display: block;
                         }
                         
                         &__price {
@@ -566,14 +573,15 @@ h6 {
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
-    /**transform: scaleX(0);
-    transition: transform 2s;**/
+    /**transform: scaleX(0);**/
+    transition: color 2s ease-out;
     /**animation: background-size 5s ease-in-out 0s forwards;**/
 
     &:hover {
-        background: linear-gradient(#9356DC, 40%, #FF79DA);
+        /**background: linear-gradient(#9356DC, 40%, #FF79DA);**/
+        color: purple;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        /**-webkit-text-fill-color: transparent;**/
         -webkit-text-stroke-color: transparent;
         /**transform: scaleX(1);**/
     }
