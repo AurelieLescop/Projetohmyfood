@@ -341,7 +341,7 @@ h5 {
   transition-property: transform;
   transition-duration: 4s;**/
   /**animation: rotation 4s infinite linear;**/
-  animation: rotation 1.5s linear;
+  animation: rotation 0.5s ease-in 250ms;
 }
 .page__menu__organisation__summary__description__content {
   margin: auto;
