@@ -374,10 +374,15 @@ h5 {
 .page__menu__organisation__summary__description__content__title {
   /**padding: 10px;**/
   width: 100%;
-  text-overflow: "ellipsis";
+  text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   display: block;
+}
+.page__menu__organisation__summary__description__content__title h3, .page__menu__organisation__summary__description__content__title p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .page__menu__organisation__summary__description__content__price {
   display: flex;

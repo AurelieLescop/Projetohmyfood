@@ -427,10 +427,16 @@ h5 {
                         &__title {
                             /**padding: 10px;**/
                             width: 100%;
-                            text-overflow: "ellipsis";
+                            text-overflow: ellipsis;
                             overflow: hidden;
                             white-space: nowrap;
                             display: block;
+
+                            h3, p {
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            }
                         }
                         
                         &__price {
