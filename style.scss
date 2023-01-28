@@ -93,7 +93,7 @@ header {
 
             &:hover {
                 box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
-                /**opacity: 0.9;**/
+                opacity: 0.9;
             }
         }
 
@@ -483,6 +483,11 @@ h6 {
     align-items: center;
     padding-top: 15px;
     padding-bottom: 50px;
+
+    &:hover {
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+        opacity: 0.9;
+    }
 }
 
 
