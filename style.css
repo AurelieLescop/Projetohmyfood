@@ -329,10 +329,10 @@ h5 {
   display: flex;
   border-radius: 0 15px 15px 0;
   /** Felix transition: all 0.5s ease-out 0s;**/
-  transition: all 2s ease-out 0s;
+  transition: all 1s ease-out 0s;
 }
 .page__menu__organisation__summary__description .check_icone {
-  margin-left: 80px;
+  margin-left: 50px;
   display: block;
   /**
   display: flex;
@@ -512,13 +512,14 @@ h6 {
   color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  /**transition: opacity 3s;**/
+  opacity: 0.65;
+  transition: opacity 2s;
   /**transform: scaleX(0);**/
   /**transition: color 2s ease-out;**/
   /**animation: background-size 5s ease-in-out 0s forwards;**/
 }
 .restaurant__icone:hover {
-  /**opacity: 1;**/
+  opacity: 1;
   background: linear-gradient(#9356DC, 40%, #FF79DA);
   /**color: purple;**/
   -webkit-background-clip: text;
