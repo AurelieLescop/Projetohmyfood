@@ -328,10 +328,11 @@ h5 {
   justify-content: center;
   display: flex;
   border-radius: 0 15px 15px 0;
-  transition: all 0.5s ease-out 0s;
+  /** Felix transition: all 0.5s ease-out 0s;**/
+  transition: all 2s ease-out 0s;
 }
 .page__menu__organisation__summary__description .check_icone {
-  margin-left: 30px;
+  margin-left: 80px;
   display: block;
   /**
   display: flex;
@@ -347,13 +348,14 @@ h5 {
   transition-property: transform;
   transition-duration: 4s;**/
   /**animation: rotation 4s infinite linear;**/
-  transition: all 0.5s ease-out 0s;
+  /**Felix transition: all .5s ease-out 0s;**/
+  transition: all 0.75s ease-out 0s;
 }
 .page__menu__organisation__summary__description:hover .check_container {
   /**display: block;**/
   /**width: 60px;**/
   width: 60px;
-  transition: all 2s;
+  transition: all 2s; /**Felix transition: all .5s**/
 }
 .page__menu__organisation__summary__description:hover .check_icone {
   /**display: block;**/
@@ -361,7 +363,7 @@ h5 {
   display: flex;
   display: block;**/
   margin-left: 0px;
-  animation: rotation 0.5s ease-in 250ms;
+  animation: rotation 0.5s ease-in 250ms; /**Felix animation: rotation .5s ease-in .01s;**/
 }
 .page__menu__organisation__summary__description__content {
   display: flex;
@@ -510,15 +512,17 @@ h6 {
   color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  /**transition: opacity 3s;**/
   /**transform: scaleX(0);**/
-  transition: color 2s ease-out;
+  /**transition: color 2s ease-out;**/
   /**animation: background-size 5s ease-in-out 0s forwards;**/
 }
 .restaurant__icone:hover {
-  /**background: linear-gradient(#9356DC, 40%, #FF79DA);**/
-  color: purple;
+  /**opacity: 1;**/
+  background: linear-gradient(#9356DC, 40%, #FF79DA);
+  /**color: purple;**/
   -webkit-background-clip: text;
-  /**-webkit-text-fill-color: transparent;**/
+  -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: transparent;
   /**transform: scaleX(1);**/
 }
