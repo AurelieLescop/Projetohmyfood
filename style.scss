@@ -256,11 +256,14 @@ header {
 footer {
     padding: 25px 20px 25px 20px;
     background: #353535;
+    
 
     ul {
         list-style: none;
         padding: 0;
         margin: 0;
+        /**display: flex;
+        justify-content: space-around;**/
     }
 
     li {
@@ -356,8 +359,8 @@ h5 {
 
                     .check_container {
                         /**display: none;**/
+                        position: relative;
                         width: 0px;
-                        transition: width 2s;
                         background-color:#99E2D0;
                         overflow:hidden;
                         height: 100%;
@@ -366,32 +369,18 @@ h5 {
                         display: flex;
                         border-radius: 0 15px 15px 0;
                         
-                        transition: width 2s;
+                        transition: all 0.5s ease-out 0s;
                  
                     }
                     
                     .check_icone {
-                        display: none;
-                        
-                    }
-                
-                &:hover {
-
-                    .check_container {
-                        /**display: block;**/
-                        /**width: 60px;**/
-                      
-                        width: 60px; 
-                        transition: width 2s;
-                        }
-                    
-                    .check_icone {
+                        margin-left: 30px;
                         display: block;
                         /**
                         display: flex;
-                        display: block;**/
+                        display: block;
                         align-items: center;
-                        justify-content: center;
+                        justify-content: center;**/
                         
                         color: #99E2D0;
                         background-color: white;
@@ -403,6 +392,30 @@ h5 {
                         transition-property: transform;
                         transition-duration: 4s;**/
                         /**animation: rotation 4s infinite linear;**/
+                        
+
+                        transition: all .5s ease-out 0s;
+
+                        
+                    }
+                
+                &:hover {
+
+                    .check_container {
+                        /**display: block;**/
+                        /**width: 60px;**/
+                      
+                        width: 60px; 
+                        transition: all 2s;
+                        }
+                    
+                    .check_icone {
+                        /**display: block;**/
+                        /**
+                        display: flex;
+                        display: block;**/
+                        margin-left: 0px;
+                        
                         animation: rotation 0.5s ease-in 250ms;
                         }
                 }
@@ -418,6 +431,8 @@ h5 {
                         border-radius: 15px;
                         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
                         margin: 20px 20px 20px 10px;
+                        overflow: hidden;
+                        padding-left: 10px;
                         /**padding: 10px;**/
             
                         &:hover {
