@@ -329,10 +329,10 @@ h5 {
   display: flex;
   border-radius: 0 15px 15px 0;
   /** Felix transition: all 0.5s ease-out 0s;**/
-  transition: all 1s ease-out 0s;
+  transition: all 0.5s;
 }
 .page__menu__organisation__summary__description .check_icone {
-  margin-left: 50px;
+  margin-left: 70px;
   display: block;
   /**
   display: flex;
@@ -349,7 +349,7 @@ h5 {
   transition-duration: 4s;**/
   /**animation: rotation 4s infinite linear;**/
   /**Felix transition: all .5s ease-out 0s;**/
-  transition: all 0.75s ease-out 0s;
+  transition: all 1.3s;
 }
 .page__menu__organisation__summary__description:hover .check_container {
   /**display: block;**/
