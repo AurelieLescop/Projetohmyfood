@@ -103,7 +103,7 @@ header {
   padding-right: 15px;
   margin: auto;
 }
-.manual__description__explanation {
+.manual__explanation {
   margin: auto;
   display: flex;
   align-items: center;
@@ -114,15 +114,15 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
 }
-.manual__description__explanation:hover {
+.manual__explanation:hover {
   /**margin: 5px;**/
   background: #f5edff;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
-.manual__description__explanation:hover .manual__icone {
+.manual__explanation:hover .manual__icone {
   color: #9356DC;
 }
-.manual__description__explanation__number {
+.manual__number {
   position: absolute;
   /**margin-right: 15px;**/
   margin-left: -10px;
@@ -143,40 +143,27 @@ header {
 
 .restaurant {
   background: #f7f7f7;
-  /**
-      &__icone {
-      color: white;
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: black;
-
-      &:hover {
-          background: linear-gradient(#9356DC, 40%, #FF79DA);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          -webkit-text-stroke-color: transparent;
-      }
-      }**/
 }
 .restaurant__container {
   display: flex;
   flex-wrap: wrap;
 }
-.restaurant__container__vignette {
+.restaurant__vignette {
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
 }
-.restaurant__container__vignette__summary {
+.restaurant__summary {
   margin: auto;
   width: 300px;
   margin-bottom: 20px;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.restaurant__container__vignette__summary:hover {
+.restaurant__summary:hover {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
-.restaurant__container__vignette__summary__description {
+.restaurant__description {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -184,11 +171,11 @@ header {
   margin-right: 20px;
   height: 70px;
 }
-.restaurant__container__vignette__summary h3, .restaurant__container__vignette__summary p {
+.restaurant h3, .restaurant p {
   margin: 0;
   padding: 0;
 }
-.restaurant__container__vignette__summary a {
+.restaurant a {
   text-decoration: none;
   color: #000000;
   height: 50%;
@@ -222,6 +209,25 @@ header {
   width: 100%;
   height: 150px;
   border-radius: 15px 15px 0 0;
+}
+.restaurant__icone {
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  opacity: 0.5;
+  transition: opacity 2s;
+  /**transform: scaleX(0);**/
+  /**transition: color 2s ease-out;**/
+  /**animation: background-size 5s ease-in-out 0s forwards;**/
+}
+.restaurant__icone:hover {
+  opacity: 1;
+  background: linear-gradient(#9356DC, 40%, #FF79DA);
+  /**color: purple;**/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: transparent;
+  /**transform: scaleX(1);**/
 }
 
 footer {
@@ -508,26 +514,6 @@ h6 {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: xxx;
 }**/
-.restaurant__icone {
-  color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  opacity: 0.5;
-  transition: opacity 2s;
-  /**transform: scaleX(0);**/
-  /**transition: color 2s ease-out;**/
-  /**animation: background-size 5s ease-in-out 0s forwards;**/
-}
-.restaurant__icone:hover {
-  opacity: 1;
-  background: linear-gradient(#9356DC, 40%, #FF79DA);
-  /**color: purple;**/
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-color: transparent;
-  /**transform: scaleX(1);**/
-}
-
 /**@keyframes background-size {
     from {
         background: 0%;
