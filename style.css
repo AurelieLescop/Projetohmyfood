@@ -410,9 +410,6 @@ h5 {
 .menu__title {
   /**padding: 10px;**/
   width: 100%;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
   display: block;
 }
 .menu__title h3, .menu__title p {
