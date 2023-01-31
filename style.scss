@@ -78,7 +78,7 @@ header {
         padding-top: 15px;
         padding-bottom: 50px;
 
-        &_contenu {
+        &_content {
             color: white;
             font-weight: 700;
             /**linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
@@ -258,7 +258,7 @@ header {
             /**color: purple;**/
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            -webkit-text-stroke-color: transparent;
+            -webkit-text-stroke-width: 0px;
             /**transform: scaleX(1);**/
         }
     }
@@ -301,7 +301,7 @@ h4 {
 
 /** CSS menu**/
 
-.bandeau {
+.poster {
     position: absolute;
     width: 100%;
     height: 200px;
@@ -352,24 +352,47 @@ h5 {
 
     &__icone {
         padding-right: 30px;
+        color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        opacity: 0.5;
+        transition: opacity 2s;
+        /**transform: scaleX(0);**/
+        /**transition: color 2s ease-out;**/
+        /**animation: background-size 5s ease-in-out 0s forwards;**/
+    
+        &:hover {
+            opacity: 1;
+            background: linear-gradient(#9356DC, 25%, #FF79DA);
+            /**color: purple;**/
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 0px;
+            /**transform: scaleX(1);**/
+        }
     }
 
     &__menu {
         background: #F7F7F7;
         padding-top: 0;
-    
+    }
+}
+
+    .menu {
         &__organisation {
             display: flex;
             flex-wrap: wrap;
+        }
         
-            &__summary {
+        &__summary {
                 padding-left: 10px;
                 padding-right: 10px;
                 margin: auto;
+        }
             
-                &__description {
+        &__description {
 
-                    .check_container {
+                    .check__container {
                         /**display: none;**/
                         position: relative;
                         width: 0px;
@@ -386,7 +409,7 @@ h5 {
                  
                     }
                     
-                    .check_icone {
+                    .check__icone {
                         margin-left: 70px;
                         display: block;
                         /**
@@ -415,7 +438,7 @@ h5 {
                 
                 &:hover {
 
-                    .check_container {
+                    .check__container {
                         /**display: block;**/
                         /**width: 60px;**/
                       
@@ -423,7 +446,7 @@ h5 {
                         transition: all 2s; /**Felix transition: all .5s**/
                         }
                     
-                    .check_icone {
+                    .check__icone {
                         /**display: block;**/
                         /**
                         display: flex;
@@ -432,9 +455,10 @@ h5 {
                         
                         animation: rotation 0.5s ease-in 250ms; /**Felix animation: rotation .5s ease-in .01s;**/
                         }
-                }
-            }
-                    &__description__content {
+                    }
+                    }
+            
+                    &__content {
                         display: flex;
                         flex-direction: row;
                         align-items: center;
@@ -452,8 +476,10 @@ h5 {
                         &:hover {
                             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
                         }
+                    }
 
-                        &__title {
+
+                    &__title {
                             /**padding: 10px;**/
                             width: 100%;
                             text-overflow: ellipsis;
@@ -468,7 +494,7 @@ h5 {
                             }
                         }
                         
-                        &__price {
+                    &__price {
                             display: flex;
                             align-items: flex-end;
                             font-weight: bold;
@@ -479,11 +505,12 @@ h5 {
                             padding: 0 10px 20px 0;
                             }**/
                         }
-                    }
-            }
-        }
+    }
+            
+        
     
-            a {
+    .page__menu  {
+        a {
                 text-decoration: none;
                 color: #000000;
             }
@@ -494,7 +521,7 @@ h5 {
                 padding: 0;
             }
         }
-    }
+
 
 
 h6 {
@@ -539,7 +566,7 @@ h6 {
     }
 }
 
-.page__menu__organisation__summary {
+.menu__summary {
     animation: transition 1.0s ease-in-out 0s forwards, opacity 1.0s ease-in-out 0s;
 }
 
