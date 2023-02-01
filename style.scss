@@ -491,6 +491,8 @@ h5 {
         /**padding: 10px;**/
         width: 100%;
         display: block;
+        overflow: hidden;
+        
 
         h3,
         p {
@@ -593,22 +595,35 @@ h6 {
 }
 
 /** essai loading spinner**/
-.loading__container {
+.entirepage {
+    animation: opacity 5.0s ease-in-out 0s;
+}
+
+/**.loading__container {
+
     width: 150px; 
     height: 150px;
-}
+}**/
 
 .loading {
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: disparition 3.0s linear;
+    animation-fill-mode: forwards;
 }
 
 .loading::after {
     content: "";
     width: 50px;
     height: 50px;
-    border: 10px solid #dddddd;
-    border-top-color: #009579;
+    border: 10px solid #99E2D0;
+    border-top-color: #FF79DA;
     border-radius: 50%;
     animation: loading 1s ease infinite;
 }
@@ -617,6 +632,17 @@ h6 {
     to {
         transform: rotate(1turn);
     }
+}
+
+@keyframes disparition {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
 }
 
 /** animation apparition coche menu**/
