@@ -91,6 +91,7 @@ header {
 .introduction__btn_content:hover {
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
   opacity: 0.9;
+  scale: 1.1;
 }
 
 .manual {
@@ -353,17 +354,14 @@ h5 {
   justify-content: center;
   display: flex;
   border-radius: 0 15px 15px 0;
-  /** Felix transition: all 0.5s ease-out 0s;**/
+  /**  transition: all 0.5s ease-out 0s;**/
   transition: all 0.5s;
 }
 .menu__description .check__icone {
   margin-left: 70px;
-  display: block;
-  /**
-              display: flex;
-              display: block;
-              align-items: center;
-              justify-content: center;**/
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #99E2D0;
   background-color: white;
   width: 20px;
@@ -373,15 +371,15 @@ h5 {
               transition-property: transform;
               transition-duration: 4s;**/
   /**animation: rotation 4s infinite linear;**/
-  /**Felix transition: all .5s ease-out 0s;**/
-  transition: all 1.3s;
+  /** transition: all .5s ease-out 0s;**/
+  transition: margin-left 0.5s;
 }
 .menu__description:hover .check__container {
   /**display: block;**/
   /**width: 60px;**/
   width: 60px;
-  transition: all 2s;
-  /**Felix transition: all .5s**/
+  transition: all 0.5s;
+  /** transition: all .5s**/
 }
 .menu__description:hover .check__icone {
   /**display: block;**/
@@ -389,8 +387,8 @@ h5 {
           display: flex;
           display: block;**/
   margin-left: 0px;
-  animation: rotation 0.5s ease-in 250ms;
-  /**Felix animation: rotation .5s ease-in .01s;**/
+  animation: rotation 0.5s ease-in;
+  /** animation: rotation .5s ease-in .01s;**/
 }
 .menu__content {
   display: flex;
@@ -462,6 +460,7 @@ h6 {
 }
 .btn:hover {
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+  scale: 1.1;
   opacity: 0.9;
 }
 
@@ -495,26 +494,24 @@ h6 {
     transform: rotate(360deg);
   }
 }
-/** essai loading spinner**/
+/** loading spinner**/
 .entirepage {
-  animation: opacity 5s ease-in-out 0s;
+  animation: opacity 3s ease-in-out 0s;
+  position: absolute;
+  z-index: 100;
 }
 
-/**.loading__container {
-
-    width: 150px; 
-    height: 150px;
-}**/
 .loading {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
+  z-index: 0;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  animation: disparition 3s linear;
+  animation: disparition 2s linear;
   animation-fill-mode: forwards;
 }
 
