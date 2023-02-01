@@ -267,6 +267,13 @@ header {
             /**transform: scaleX(1);**/
         }
     }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: "shrikhand", sans-serif;
+        margin-top: 0;
+    }
 }
 
 
@@ -297,7 +304,7 @@ footer {
     padding-right: 10px;
 }
 
-h4 {
+.footer__title {
     font-weight: 400;
     font-family: "shrikhand", sans-serif;
     color: white;
@@ -321,12 +328,6 @@ main {
     height: 100%;
 }
 
-h5 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-family: "shrikhand", sans-serif;
-    margin-top: 0;
-}
 
 /**.titre_page {
     display: flex;
@@ -534,7 +535,7 @@ h5 {
 
 
 
-h6 {
+.menu__part {
     margin: 0;
     font-weight: 400;
     font-size: 1rem;

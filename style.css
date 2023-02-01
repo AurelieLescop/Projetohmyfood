@@ -234,6 +234,12 @@ header {
   -webkit-text-stroke-width: 0px;
   /**transform: scaleX(1);**/
 }
+.restaurant__title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "shrikhand", sans-serif;
+  margin-top: 0;
+}
 
 footer {
   padding: 25px 20px 25px 20px;
@@ -258,7 +264,7 @@ footer a {
   padding-right: 10px;
 }
 
-h4 {
+.footer__title {
   font-weight: 400;
   font-family: "shrikhand", sans-serif;
   color: white;
@@ -278,13 +284,6 @@ main {
   display: flex;
   flex-direction: column;
   height: 100%;
-}
-
-h5 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-family: "shrikhand", sans-serif;
-  margin-top: 0;
 }
 
 /**.titre_page {
@@ -445,7 +444,7 @@ h5 {
   padding: 0;
 }
 
-h6 {
+.menu__part {
   margin: 0;
   font-weight: 400;
   font-size: 1rem;
