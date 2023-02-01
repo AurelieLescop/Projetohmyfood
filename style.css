@@ -171,7 +171,8 @@ header {
   margin-right: 20px;
   height: 70px;
 }
-.restaurant h3, .restaurant p {
+.restaurant h3,
+.restaurant p {
   margin: 0;
   padding: 0;
 }
@@ -359,18 +360,18 @@ h5 {
   margin-left: 70px;
   display: block;
   /**
-  display: flex;
-  display: block;
-  align-items: center;
-  justify-content: center;**/
+              display: flex;
+              display: block;
+              align-items: center;
+              justify-content: center;**/
   color: #99E2D0;
   background-color: white;
   width: 20px;
   height: 20px;
   border-radius: 10px;
   /**transform: rotate(180deg);
-  transition-property: transform;
-  transition-duration: 4s;**/
+              transition-property: transform;
+              transition-duration: 4s;**/
   /**animation: rotation 4s infinite linear;**/
   /**Felix transition: all .5s ease-out 0s;**/
   transition: all 1.3s;
@@ -379,15 +380,17 @@ h5 {
   /**display: block;**/
   /**width: 60px;**/
   width: 60px;
-  transition: all 2s; /**Felix transition: all .5s**/
+  transition: all 2s;
+  /**Felix transition: all .5s**/
 }
 .menu__description:hover .check__icone {
   /**display: block;**/
   /**
-  display: flex;
-  display: block;**/
+          display: flex;
+          display: block;**/
   margin-left: 0px;
-  animation: rotation 0.5s ease-in 250ms; /**Felix animation: rotation .5s ease-in .01s;**/
+  animation: rotation 0.5s ease-in 250ms;
+  /**Felix animation: rotation .5s ease-in .01s;**/
 }
 .menu__content {
   display: flex;
@@ -412,7 +415,8 @@ h5 {
   width: 100%;
   display: block;
 }
-.menu__title h3, .menu__title p {
+.menu__title h3,
+.menu__title p {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -424,9 +428,9 @@ h5 {
   height: 100%;
   padding: 0 10px 20px 0;
   /**
-  p {
-  padding: 0 10px 20px 0;
-  }**/
+                      p {
+                      padding: 0 10px 20px 0;
+                      }**/
 }
 
 .page__menu a {
@@ -490,32 +494,58 @@ h6 {
     transform: rotate(360deg);
   }
 }
-/** animation apparition coche menu**/
-/**@keyframes slide {
-    from {
-        margin-left: 180px;
-    }
-    to {
-        margin-left: 0px;
-    }
-}**/
-/**@keyframes slide {
-    from {
-        width: 0px;
-    }
-    to {
-        width: 60px;
-    }
+/** essai loading spinner**/
+.loading__container {
+  width: 150px;
+  height: 150px;
 }
 
-.page__menu__organisation__summary:hover .check_container {
-    animation: slide 2.0s ease-in-out 0s forwards;
-} 
+.loading {
+  display: flex;
+  justify-content: center;
+}
 
-**/
+.loading::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 10px solid #dddddd;
+  border-top-color: #009579;
+  border-radius: 50%;
+  animation: loading 1s ease infinite;
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(1turn);
+  }
+}
+/** animation apparition coche menu**/
+/**@keyframes slide {
+        from {
+            margin-left: 180px;
+        }
+        to {
+            margin-left: 0px;
+        }
+    }**/
+/**@keyframes slide {
+        from {
+            width: 0px;
+        }
+        to {
+            width: 60px;
+        }
+    }
+
+    .page__menu__organisation__summary:hover .check_container {
+        animation: slide 2.0s ease-in-out 0s forwards;
+    } 
+
+    **/
 /** .page__menu__organisation__summary:hover .page__menu__organisation__summary__description__content__price {
-     animation: slide 2.0s ease-in-out 0s forwards;
- }**/
+        animation: slide 2.0s ease-in-out 0s forwards;
+    }**/
 /**
     .page__menu__organisation__summary:hover .check_container {
         animation: opacity 1.0s ease-in-out 0s;
