@@ -541,6 +541,20 @@ h6 {
     opacity: 0;
   }
 }
+/*Style appliqué au format Tablette et desktop*/
+@media all and (min-width: 767px) {
+  h4 {
+    text-align: center;
+  }
+  footer ul {
+    display: flex;
+    flex: wrap;
+    justify-content: space-around;
+  }
+  footer li {
+    margin-right: 15px;
+  }
+}
 /** animation apparition coche menu**/
 /**@keyframes slide {
         from {
