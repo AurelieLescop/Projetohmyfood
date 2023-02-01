@@ -68,14 +68,16 @@ header {
   background: linear-gradient(#CECECE, 5%, #EAEAEA);
   height: 46px;
 }
-.introduction__btn {
+
+.btn {
+  background: #F7F7F7;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 15px;
   padding-bottom: 50px;
 }
-.introduction__btn_content {
+.btn__content {
   color: white;
   font-weight: 700;
   /**linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
@@ -88,10 +90,11 @@ header {
   border-radius: 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.introduction__btn_content:hover {
+.btn__content:hover {
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
   opacity: 0.9;
-  scale: 1.1;
+  scale: 1.05;
+  cursor: pointer;
 }
 
 .manual {
@@ -452,16 +455,6 @@ h6 {
 
 .btn {
   background: #F7F7F7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 15px;
-  padding-bottom: 50px;
-}
-.btn:hover {
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
-  scale: 1.1;
-  opacity: 0.9;
 }
 
 /** animation apparition menu**/
