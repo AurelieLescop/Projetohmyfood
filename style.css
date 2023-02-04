@@ -437,10 +437,6 @@ main {
                       }**/
 }
 
-.page__menu a {
-  text-decoration: none;
-  color: #000000;
-}
 .page__menu h3,
 .page__menu p {
   margin: 0;
