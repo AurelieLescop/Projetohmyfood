@@ -277,6 +277,7 @@ footer a {
 .poster {
   position: absolute;
   width: 100%;
+  max-width: 1400px;
   height: 200px;
   object-fit: cover;
   z-index: 0;
