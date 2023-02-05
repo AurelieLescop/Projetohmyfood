@@ -1,3 +1,7 @@
+$color1: #9356DC;
+$color2: #FF79DA;
+$color3: #99E2D0;
+
 body {
     font-family: "Roboto", sans-serif;
     margin: auto;
@@ -82,7 +86,7 @@ header {
     &__content {
         color: white;
         font-weight: 700;
-        background: linear-gradient(175deg, #FF79DA, 65%, #9356DC);
+        background: linear-gradient(175deg, $color2, 65%, $color1);
         border: 0px;
         height: 46px;
         width: 200px;
@@ -127,7 +131,7 @@ header {
             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 
             .manual__icone {
-                color: #9356DC
+                color: $color1;
             }
         }
     }
@@ -136,7 +140,7 @@ header {
         position: absolute;
         margin-left: -10px;
         color: white;
-        background-color: #9356DC;
+        background-color: $color1;
         width: 20px;
         height: 20px;
         border-radius: 10px;
@@ -211,7 +215,7 @@ header {
 
         &__position {
             position: absolute;
-            background: #99e2d0;
+            background: $color3;
             color: #008766;
             margin-right: 10px;
             margin-top: 10px;
@@ -245,7 +249,7 @@ header {
 
         &:hover {
             opacity: 1;
-            background: linear-gradient(#9356DC, 40%, #FF79DA);
+            background: linear-gradient($color1, 40%, $color2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke-width: 0px;
@@ -336,7 +340,7 @@ main {
 
         &:hover {
             opacity: 1;
-            background: linear-gradient(#9356DC, 25%, #FF79DA);
+            background: linear-gradient($color1, 25%, $color2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke-width: 0px;
@@ -367,7 +371,7 @@ main {
         .check__container {
             position: relative;
             width: 0px;
-            background-color: #99E2D0;
+            background-color: $color3;
             overflow: hidden;
             height: 100%;
             align-items: center;
@@ -382,7 +386,7 @@ main {
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #99E2D0;
+            color: $color3;
             background-color: white;
             width: 20px;
             height: 20px;
@@ -457,7 +461,7 @@ main {
     margin: 0;
     font-weight: 400;
     font-size: 1rem;
-    border-bottom: 3px solid #99E2D0;
+    border-bottom: 3px solid $color3;
     width: 40px;
 }
 
@@ -534,8 +538,8 @@ main {
     content: "";
     width: 50px;
     height: 50px;
-    border: 10px solid #99E2D0;
-    border-top-color: #FF79DA;
+    border: 10px solid $color3;
+    border-top-color: $color2;
     border-radius: 50%;
     animation: loading 1s ease infinite;
 }
