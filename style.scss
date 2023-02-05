@@ -364,6 +364,8 @@ main {
         padding-left: 10px;
         padding-right: 10px;
         margin: auto;
+        animation: transition 1.0s ease-in-out 0s forwards, opacity 1.0s ease-in-out 0s;
+
     }
 
     &__description {
@@ -378,7 +380,7 @@ main {
             justify-content: center;
             display: flex;
             border-radius: 0 15px 15px 0;
-            transition: all 0.5s;
+            transition: width 0.5s;
         }
 
         .check__icone {
@@ -397,7 +399,7 @@ main {
         &:hover {
             .check__container {
                 width: 60px;
-                transition: all 0.5s;
+                transition: width 0.5s;
             }
 
             .check__icone {
@@ -491,9 +493,6 @@ main {
     }
 }
 
-.menu__summary {
-    animation: transition 1.0s ease-in-out 0s forwards, opacity 1.0s ease-in-out 0s;
-}
 
 /** animation rotation coche menu**/
 @keyframes rotation {
@@ -564,7 +563,7 @@ main {
 /*Style appliqué au format Tablette et desktop*/
 @media all and (min-width: 767px)
 {
-h4 {
+.footer__title {
     text-align: center;
 }
 

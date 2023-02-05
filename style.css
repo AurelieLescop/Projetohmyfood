@@ -314,6 +314,7 @@ main {
   padding-left: 10px;
   padding-right: 10px;
   margin: auto;
+  animation: transition 1s ease-in-out 0s forwards, opacity 1s ease-in-out 0s;
 }
 .menu__description .check__container {
   position: relative;
@@ -325,7 +326,7 @@ main {
   justify-content: center;
   display: flex;
   border-radius: 0 15px 15px 0;
-  transition: all 0.5s;
+  transition: width 0.5s;
 }
 .menu__description .check__icone {
   margin-left: 70px;
@@ -341,7 +342,7 @@ main {
 }
 .menu__description:hover .check__container {
   width: 60px;
-  transition: all 0.5s;
+  transition: width 0.5s;
 }
 .menu__description:hover .check__icone {
   margin-left: 0px;
@@ -419,10 +420,6 @@ main {
     opacity: 1;
   }
 }
-.menu__summary {
-  animation: transition 1s ease-in-out 0s forwards, opacity 1s ease-in-out 0s;
-}
-
 /** animation rotation coche menu**/
 @keyframes rotation {
   from {
@@ -484,7 +481,7 @@ main {
 }
 /*Style appliqué au format Tablette et desktop*/
 @media all and (min-width: 767px) {
-  h4 {
+  .footer__title {
     text-align: center;
   }
   footer ul {
