@@ -12,13 +12,11 @@ section {
 
 h1 {
   font-size: 1.6rem;
-  /**font-weight: 400;**/
   text-align: center;
   padding: 20px 30px 0 30px;
 }
 
 h2 {
-  /**padding-top: 20px;**/
   padding-bottom: 10px;
   font-size: 1.2rem;
 }
@@ -57,7 +55,6 @@ header {
 
 .introduction {
   background: #f7f7f7;
-  /**height: 300px;**/
 }
 .introduction p {
   text-align: center;
@@ -82,10 +79,7 @@ header {
 .btn__content {
   color: white;
   font-weight: 700;
-  /**linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-  background: linear-gradient(20deg, #FF79DA, 65%, #9356DC)**/
   background: linear-gradient(175deg, #FF79DA, 65%, #9356DC);
-  /**background-color: #FF79DA;**/
   border: 0px;
   height: 46px;
   width: 200px;
@@ -121,7 +115,6 @@ header {
   margin-bottom: 20px;
 }
 .manual__explanation:hover {
-  /**margin: 5px;**/
   background: #f5edff;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
@@ -130,7 +123,6 @@ header {
 }
 .manual__number {
   position: absolute;
-  /**margin-right: 15px;**/
   margin-left: -10px;
   color: white;
   background-color: #9356DC;
@@ -196,7 +188,6 @@ header {
   background: #99e2d0;
   color: #008766;
   margin-right: 10px;
-  /**left: 70%;**/
   margin-top: 10px;
   height: 20px;
   width: 60px;
@@ -210,8 +201,6 @@ header {
 }
 .restaurant__picture {
   display: block;
-  /**margin-left: auto;
-  margin-right: auto;**/
   object-fit: cover;
   width: 100%;
   height: 150px;
@@ -223,18 +212,13 @@ header {
   -webkit-text-stroke-color: black;
   opacity: 0.5;
   transition: opacity 2s;
-  /**transform: scaleX(0);**/
-  /**transition: color 2s ease-out;**/
-  /**animation: background-size 5s ease-in-out 0s forwards;**/
 }
 .restaurant__icone:hover {
   opacity: 1;
   background: linear-gradient(#9356DC, 40%, #FF79DA);
-  /**color: purple;**/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 0px;
-  /**transform: scaleX(1);**/
 }
 .restaurant__title {
   font-size: 1.5rem;
@@ -251,8 +235,6 @@ footer ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  /**display: flex;
-  justify-content: space-around;**/
 }
 footer li {
   padding: 0 0 5px 0;
@@ -289,16 +271,6 @@ main {
   height: 100%;
 }
 
-/**.titre_page {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 15px 15px 0 0;
-    position: absolute;
-    top: 250px;
-    width: 100%;
-    background: #F7F7F7;
-    padding:0;
-}**/
 .page {
   z-index: 10;
   position: relative;
@@ -312,7 +284,6 @@ main {
   background: #F7F7F7;
   padding: 30px 20px 0 20px;
   margin: 0;
-  /**margin-top: 200px;**/
 }
 .page__icone {
   padding-right: 30px;
@@ -321,18 +292,13 @@ main {
   -webkit-text-stroke-color: black;
   opacity: 0.5;
   transition: opacity 2s;
-  /**transform: scaleX(0);**/
-  /**transition: color 2s ease-out;**/
-  /**animation: background-size 5s ease-in-out 0s forwards;**/
 }
 .page__icone:hover {
   opacity: 1;
   background: linear-gradient(#9356DC, 25%, #FF79DA);
-  /**color: purple;**/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 0px;
-  /**transform: scaleX(1);**/
   cursor: pointer;
 }
 .page__menu {
@@ -350,7 +316,6 @@ main {
   margin: auto;
 }
 .menu__description .check__container {
-  /**display: none;**/
   position: relative;
   width: 0px;
   background-color: #99E2D0;
@@ -360,7 +325,6 @@ main {
   justify-content: center;
   display: flex;
   border-radius: 0 15px 15px 0;
-  /**  transition: all 0.5s ease-out 0s;**/
   transition: all 0.5s;
 }
 .menu__description .check__icone {
@@ -373,28 +337,15 @@ main {
   width: 20px;
   height: 20px;
   border-radius: 10px;
-  /**transform: rotate(180deg);
-              transition-property: transform;
-              transition-duration: 4s;**/
-  /**animation: rotation 4s infinite linear;**/
-  /** transition: all .5s ease-out 0s;**/
   transition: margin-left 0.5s;
 }
 .menu__description:hover .check__container {
-  /**display: block;**/
-  /**width: 60px;**/
   width: 60px;
   transition: all 0.5s;
-  /** transition: all .5s**/
 }
 .menu__description:hover .check__icone {
-  /**display: block;**/
-  /**
-          display: flex;
-          display: block;**/
   margin-left: 0px;
   animation: rotation 0.5s ease-in;
-  /** animation: rotation .5s ease-in .01s;**/
 }
 .menu__content {
   display: flex;
@@ -409,14 +360,12 @@ main {
   margin: 20px 20px 20px 10px;
   overflow: hidden;
   padding-left: 10px;
-  /**padding: 10px;**/
 }
 .menu__content:hover {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }
 .menu__title {
-  /**padding: 10px;**/
   width: 100%;
   display: block;
   overflow: hidden;
@@ -433,10 +382,6 @@ main {
   font-weight: bold;
   height: 100%;
   padding: 0 10px 20px 0;
-  /**
-                      p {
-                      padding: 0 10px 20px 0;
-                      }**/
 }
 
 .page__menu h3,
@@ -551,87 +496,5 @@ main {
     margin-right: 15px;
   }
 }
-/** animation apparition coche menu**/
-/**@keyframes slide {
-        from {
-            margin-left: 180px;
-        }
-        to {
-            margin-left: 0px;
-        }
-    }**/
-/**@keyframes slide {
-        from {
-            width: 0px;
-        }
-        to {
-            width: 60px;
-        }
-    }
-
-    .page__menu__organisation__summary:hover .check_container {
-        animation: slide 2.0s ease-in-out 0s forwards;
-    } 
-
-    **/
-/** .page__menu__organisation__summary:hover .page__menu__organisation__summary__description__content__price {
-        animation: slide 2.0s ease-in-out 0s forwards;
-    }**/
-/**
-    .page__menu__organisation__summary:hover .check_container {
-        animation: opacity 1.0s ease-in-out 0s;
-    }**/
-/**
-    .page__menu__organisation__summary:hover .page__menu__organisation__summary__description__content__price {
-        animation: slide 2.0s,
-    }**/
-/** Animation remplissage coeur **/
-/**.icon {
-    color: xxx;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: xxx;
-}**/
-/**@keyframes background-size {
-    from {
-        background: 0%;
-    }
-    to {
-        background: 100%;
-    }
-}**/
-/**
-.coeur_remplissage {
-    background: linear-gradient(#9356DC, 40%, #FF79DA);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-color: transparent;
-    transition: all 0.3s linear 0s;
-    width: 100%;
-    height: 0;
-    position: absolute;
-    bottom: 0;
-}
-
-.restaurant__icone:hover .coeur_remplissage {
-    height: 100%;
-}
-**/
-/**
-.fa-heart {
-    color: #FFF;
-    background-color: #000;
-    border-radius: 50%;
-    padding:.2em;
-    }
-.fa-heart::before {
-    content: "\f004";
-    font-weight: bold;
-    transition: color 1s ease-out;
-    }
-.fa-heart:hover::before{
-    color: red;
-    cursor: pointer;
-    }
-    **/
 
 /*# sourceMappingURL=style.css.map */
