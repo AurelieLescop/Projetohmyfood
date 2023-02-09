@@ -6,6 +6,7 @@ body {
     font-family: "Roboto", sans-serif;
     margin: auto;
     width: 100%;
+    height: 100%;
     max-width: 1400px;
 }
 
@@ -317,7 +318,6 @@ main {
 
 .page {
     z-index: 10;
-    position: relative;
     margin-top: 150px;
     border-radius: 40px;
 
@@ -371,7 +371,6 @@ main {
     &__description {
 
         .check__container {
-            position: relative;
             width: 0px;
             background-color: $color3;
             overflow: hidden;
@@ -519,6 +518,7 @@ main {
 .loading {
     margin: auto;
     width: 100%;
+    height: 100%;
     max-width: 1400px;
     display: flex;
     justify-content: center;
