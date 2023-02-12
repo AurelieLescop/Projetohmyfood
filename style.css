@@ -208,19 +208,23 @@ header {
   height: 150px;
   border-radius: 15px 15px 0 0;
 }
-.restaurant__icone {
-  color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  opacity: 0.5;
-  transition: opacity 2s;
+.restaurant__icone-survol {
+  transition: color 2s ease-out;
+  color: #f7f7f7;
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 9px;
+  opacity: 0;
+  transition: color 2s ease-out;
+}
+.restaurant__icone-survol:hover {
+  color: #9356DC;
+  opacity: 1;
+  cursor: pointer;
 }
 .restaurant__icone:hover {
-  opacity: 1;
-  background: linear-gradient(#9356DC, 40%, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 0px;
+  color: #9356DC;
+  cursor: pointer;
 }
 .restaurant__title {
   font-size: 1.5rem;
@@ -287,19 +291,26 @@ main {
   margin: 0;
 }
 .page__icone {
-  padding-right: 30px;
-  color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  opacity: 0.5;
-  transition: opacity 2s;
+  position: absolute;
+  margin-left: -70px;
+  margin-top: 35px;
+}
+.page__icone-survol {
+  transition: color 2s ease-out;
+  color: #f7f7f7;
+  position: absolute;
+  margin-left: -70px;
+  margin-top: 35px;
+  opacity: 0;
+  transition: color 2s ease-out;
+}
+.page__icone-survol:hover {
+  color: #9356DC;
+  opacity: 1;
+  cursor: pointer;
 }
 .page__icone:hover {
-  opacity: 1;
-  background: linear-gradient(#9356DC, 25%, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 0px;
+  color: #9356DC;
   cursor: pointer;
 }
 .page__menu {
