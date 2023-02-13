@@ -291,7 +291,7 @@ main {
 .page__icone {
   display: flex;
   align-items: center;
-  padding-right: 30px;
+  padding-right: 20px;
   color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
